@@ -8,8 +8,14 @@ public class Output {
 
     public void printTablero(Tablero tablero){
         for (int i = 0; i < tablero.getCasellas().length; i++){
-            for (int j = 0; j < tablero.getCasellas()[0].length; j++){
-                System.out.println(i + " " + j);
+            for (int j = 0; j < tablero.getCasellas()[1].length; j++){
+
+                if (j < tablero.getCasellas()[1].length - 1){
+                    System.out.print(i + "" + j + " ");
+                } else if (j >= tablero.getCasellas()[1].length - 1){
+                    System.out.println(i + "" + j + " ");
+                }
+
             }
         }
     }
