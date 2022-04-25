@@ -14,6 +14,10 @@ public class Jugador {
         return id;
     }
 
+    public boolean isHasGuanyat() {
+        return hasGuanyat;
+    }
+
     public void setHasGuanyat() {
         this.hasGuanyat = true;
     }
@@ -28,6 +32,8 @@ public class Jugador {
                 casellas[i][columnaTriada].marcarCasella(jugador);
             }
         }
+
+        tablero.comprovaAlineament(tablero, jugador);
 
     }
 }
