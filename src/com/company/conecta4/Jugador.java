@@ -24,6 +24,7 @@ public class Jugador {
 
     public void colocarFicha(Tablero tablero, Jugador jugador){
         Input input = new Input();
+        Output output = new Output();
         Casella[][] casellas = tablero.getCasellas();
         int columnaTriada = input.triarColumna();
 
@@ -33,6 +34,7 @@ public class Jugador {
             }
         }
 
+        output.printTablero(tablero);
         tablero.comprovaAlineament(tablero, jugador);
 
     }

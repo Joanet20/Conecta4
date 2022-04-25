@@ -17,6 +17,10 @@ public class Casella {
         return ocupada;
     }
 
+    public int getIdJugador() {
+        return idJugador;
+    }
+
     public void marcarCasella (Jugador jugador){
         this.ocupada = true;
         this.idJugador = jugador.getId();
