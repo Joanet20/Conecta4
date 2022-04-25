@@ -1,4 +1,4 @@
-package com.company.buscaminas;
+package com.company.conecta4;
 
 public class Jugador {
 
