@@ -3,6 +3,7 @@ package com.company.buscaminas;
 public class Casella {
 
     private boolean ocupada;
+    private int idJugador;
     private int casellaX;
     private int casellaY;
 
@@ -16,7 +17,8 @@ public class Casella {
         return ocupada;
     }
 
-    public void marcarCasella (boolean ocupada){
+    public void marcarCasella (Jugador jugador){
         this.ocupada = true;
+        this.idJugador = jugador.getId();
     }
 }

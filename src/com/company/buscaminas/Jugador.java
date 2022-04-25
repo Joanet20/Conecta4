@@ -3,5 +3,12 @@ package com.company.buscaminas;
 public class Jugador {
 
     private int id;
-    private Ficha[] fiches;
+
+    public Jugador (int id){
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
 }
