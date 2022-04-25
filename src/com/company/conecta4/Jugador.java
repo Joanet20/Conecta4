@@ -11,4 +11,8 @@ public class Jugador {
     public int getId() {
         return id;
     }
+
+    public void colocarFicha(){
+
+    }
 }
