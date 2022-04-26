@@ -25,10 +25,15 @@ public class Tablero {
             for (int j = 0; j < tablero.getCasellas().length; j++){
 
                 if (i >= 3){
-                    if (tablero.getCasellas()[j][i-1].isOcupada() &&
+                    if ((tablero.getCasellas()[j][i-1].isOcupada() &&
                             tablero.getCasellas()[j][i-2].isOcupada() &&
                             tablero.getCasellas()[j][i-3].isOcupada() &&
-                            tablero.getCasellas()[j][i].isOcupada()){
+                            tablero.getCasellas()[j][i].isOcupada()) &&
+
+                            (tablero.getCasellas()[j][i-1].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i-2].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i-3].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i].getIdJugador() == jugador.getId())){
                         jugador.setHasGuanyat();
                     }
                 }
@@ -37,7 +42,12 @@ public class Tablero {
                     if (tablero.getCasellas()[j-1][i-1].isOcupada() &&
                             tablero.getCasellas()[j-2][i-2].isOcupada() &&
                             tablero.getCasellas()[j-3][i-3].isOcupada() &&
-                            tablero.getCasellas()[j][i].isOcupada()){
+                            tablero.getCasellas()[j][i].isOcupada() &&
+
+                            (tablero.getCasellas()[j-1][i-1].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j-2][i-2].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j-3][i-3].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i].getIdJugador() == jugador.getId())){
                         jugador.setHasGuanyat();
                     }
                 }
@@ -46,7 +56,12 @@ public class Tablero {
                     if (tablero.getCasellas()[j+1][i-1].isOcupada() &&
                             tablero.getCasellas()[j+2][i-2].isOcupada() &&
                             tablero.getCasellas()[j+3][i-3].isOcupada() &&
-                            tablero.getCasellas()[j][i].isOcupada()){
+                            tablero.getCasellas()[j][i].isOcupada() &&
+
+                            (tablero.getCasellas()[j+1][i-1].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j+2][i-2].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j+3][i-3].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i].getIdJugador() == jugador.getId())){
                         jugador.setHasGuanyat();
                     }
                 }
@@ -55,7 +70,12 @@ public class Tablero {
                     if (tablero.getCasellas()[j-1][i].isOcupada() &&
                             tablero.getCasellas()[j-2][i].isOcupada() &&
                             tablero.getCasellas()[j-3][i].isOcupada() &&
-                            tablero.getCasellas()[j][i].isOcupada()){
+                            tablero.getCasellas()[j][i].isOcupada() &&
+
+                            (tablero.getCasellas()[j-1][i].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j-2][i].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j-3][i].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i].getIdJugador() == jugador.getId())){
                         jugador.setHasGuanyat();
                     }
                 }
@@ -64,7 +84,12 @@ public class Tablero {
                     if (tablero.getCasellas()[j+1][i].isOcupada() &&
                             tablero.getCasellas()[j+2][i].isOcupada() &&
                             tablero.getCasellas()[j+3][i].isOcupada() &&
-                            tablero.getCasellas()[j][i].isOcupada()){
+                            tablero.getCasellas()[j][i].isOcupada() &&
+
+                            (tablero.getCasellas()[j+1][i].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j+2][i].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j+3][i].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i].getIdJugador() == jugador.getId())){
                         jugador.setHasGuanyat();
                     }
                 }
@@ -73,7 +98,12 @@ public class Tablero {
                     if (tablero.getCasellas()[j][i+1].isOcupada() &&
                             tablero.getCasellas()[j][i+2].isOcupada() &&
                             tablero.getCasellas()[j][i+3].isOcupada() &&
-                            tablero.getCasellas()[j][i].isOcupada()){
+                            tablero.getCasellas()[j][i].isOcupada() &&
+
+                            (tablero.getCasellas()[j][i+1].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i+2].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i+3].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i].getIdJugador() == jugador.getId())){
                         jugador.setHasGuanyat();
                     }
                 }
@@ -82,7 +112,12 @@ public class Tablero {
                     if (tablero.getCasellas()[j-1][i+1].isOcupada() &&
                             tablero.getCasellas()[j-2][i+2].isOcupada() &&
                             tablero.getCasellas()[j-3][i+3].isOcupada() &&
-                            tablero.getCasellas()[j][i].isOcupada()){
+                            tablero.getCasellas()[j][i].isOcupada() &&
+
+                            (tablero.getCasellas()[j-1][i+1].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j-2][i+2].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j-3][i+3].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i].getIdJugador() == jugador.getId())){
                         jugador.setHasGuanyat();
                     }
                 }
@@ -91,7 +126,12 @@ public class Tablero {
                     if (tablero.getCasellas()[j+1][i+1].isOcupada() &&
                             tablero.getCasellas()[j+2][i+2].isOcupada() &&
                             tablero.getCasellas()[j+3][i+3].isOcupada() &&
-                            tablero.getCasellas()[j][i].isOcupada()){
+                            tablero.getCasellas()[j][i].isOcupada() &&
+
+                            (tablero.getCasellas()[j+1][i+1].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j+1][i+2].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j+1][i+3].getIdJugador() == jugador.getId() &&
+                                    tablero.getCasellas()[j][i].getIdJugador() == jugador.getId())){
                         jugador.setHasGuanyat();
                     }
                 }
