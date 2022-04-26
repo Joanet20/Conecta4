@@ -30,7 +30,7 @@ public class Jugador {
 
         for (int i = 0; i < casellas.length; i++){
             if (i+1 < casellas.length){
-                if (!casellas[i][columnaTriada].isOcupada() && casellas[i+1][columnaTriada].isOcupada()){
+                if (!casellas[i][columnaTriada].isOcupada() && (casellas[i+1][columnaTriada].isOcupada() || i+1 >= casellas.length)){
                     casellas[i][columnaTriada].marcarCasella(jugador);
                 }
             }

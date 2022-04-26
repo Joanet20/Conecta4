@@ -14,18 +14,23 @@ public class Output {
                     if (tablero.getCasellas()[i][j].isOcupada()){
                         System.out.print("[" + tablero.getCasellas()[i][j].getIdJugador() + "]");
                     } else {
-                        System.out.print("[" + " " + "]");
+                        System.out.print("[" + "N" + "]");
                     }
                 } else if (j >= tablero.getCasellas()[1].length - 1){
                     if (tablero.getCasellas()[i][j].isOcupada()){
                         System.out.println("[" + tablero.getCasellas()[i][j].getIdJugador() + "]");
                     } else {
-                        System.out.println("[" + " " + "]");
+                        System.out.println("[" + "N" + "]");
                     }
                 }
 
 
             }
         }
+    }
+
+    public void indicaTorn(Jugador jugador){
+        System.out.println();
+        System.out.println("Es el torn del jugador " + jugador.getId());
     }
 }
