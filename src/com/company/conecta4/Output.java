@@ -33,4 +33,8 @@ public class Output {
         System.out.println();
         System.out.println("Es el torn del jugador " + jugador.getId());
     }
+
+    public void youWin(Jugador jugador){
+        System.out.println("El jugador " + jugador.getId() + " ha guanyat!!");
+    }
 }
