@@ -29,8 +29,9 @@ public class Jugador {
         int columnaTriada = input.triarColumna();
 
         for (int i = 0; i < casellas.length; i++){
-            if ((i+1) < casellas.length && casellas[i+1][columnaTriada].isOcupada() || (i+1) >= casellas.length){
+            if (((i+1) < casellas.length && casellas[i+1][columnaTriada].isOcupada()) || (i+1) >= casellas.length){
                 casellas[i][columnaTriada].marcarCasella(jugador);
+                i = casellas.length;
             }
         }
 
