@@ -7,6 +7,7 @@ public class Connecta4 {
         Jugador j1 = new Jugador(1);
         Jugador j2 = new Jugador(2);
         Tablero tablero = new Tablero();
+        tablero.crearCaselles(tablero);
 
         int inici = (int) Math.floor(Math.random()*2);
 

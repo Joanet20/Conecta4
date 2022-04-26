@@ -28,9 +28,11 @@ public class Jugador {
         Casella[][] casellas = tablero.getCasellas();
         int columnaTriada = input.triarColumna();
 
-        for (int i = tablero.getCasellas().length; i > 0; i++){
-            if (!casellas[i][columnaTriada].isOcupada()){
-                casellas[i][columnaTriada].marcarCasella(jugador);
+        for (int i = 0; i < casellas.length; i++){
+            if (i+1 < casellas.length){
+                if (!casellas[i][columnaTriada].isOcupada() && casellas[i+1][columnaTriada].isOcupada()){
+                    casellas[i][columnaTriada].marcarCasella(jugador);
+                }
             }
         }
 
